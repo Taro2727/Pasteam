@@ -1,0 +1,41 @@
+body{
+  
+       height: 100vh;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(29, 29, 102);
+   
+   }
+.centrar {
+        background-image: linear-gradient(to bottom, #2c42c0, #2919a0);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        padding: 30vh; 
+        width: 90%;
+        max-width: 450px;
+        text-align: center; /* El texto general de la tarjeta está centrado */
+        align-items: center;
+        
+    }
+    
+    img{
+        margin-right: 80vh;
+        height: 20vh;
+        width: 20vh;
+        
+    }
+
+    h1{
+        
+        
+        font-size: medium;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+    h2{
+        font-size: medium;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+   
+   
