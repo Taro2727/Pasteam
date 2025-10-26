@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #191c30, #1b255a, #14237a);
+    font-family: sans-serif;
+}
+
+.logoheader{
+    display: flex;
+    gap: 20px; 
+    margin-top: -400px;
+    margin-left: -550;
+   
+}
+
+.logoheader img{
+    margin-right: 18px;
+    height: 55px;
+    filter: brightness(0) invert(1);
+
+
+}
+.logoheader a{
+    color: white;
+}
+.card {
+    background-image: linear-gradient(to bottom, #e0eaf5, #8190d4);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    padding: 40px 50px;
+    width: 90%;
+    max-width: 450px;
+   
+    text-align: center; /* El texto general de la tarjeta está centrado */
+}
+
+.centrar h2 {
+    font-size: 36px;
+    color: rgb(28, 36, 43);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.centrar .subtitulo {
+    font-size: 16px;
+    color: rgb(50, 58, 65);
+    margin-bottom: 30px; /* Damos más espacio antes del formulario */
+}
+
+/* --- ¡AQUÍ ESTÁ LA MAGIA! --- */
+/* Hacemos que el formulario se alinee a la izquierda */
+form {
+    text-align: left;
+}
+
+form p {
+  font-size: 16px;
+  color: rgb(50, 58, 65);
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(228, 233, 255);
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #14237a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b255a;
+}

@@ -1,0 +1,306 @@
+
+body {
+    font-family: sans-serif; /*esta fuente me gusto por eso la deje */
+    margin: 0;   
+    padding: 0;
+    background-image:linear-gradient(to bottom, #0e1853,#18287a, #182c9c);
+    background-size: cover;
+    line-height: 1.6;  /*espaciado entre textos */
+    scroll-behavior: smooth; /*mueve ligeramente los botones para cuando los toques jij*/
+    overflow: scroll;
+    
+  }
+  
+
+
+  /* Encabezado */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-image:linear-gradient(to bottom, #b1b9eb,#808cd3, #3c53d8);
+    
+  }
+  
+  .logo img {
+    height: 45px;
+    border-radius: 50px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .contacto {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .contacto:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contenido principal tipo landing */
+  .contenido-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 1rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  h2 {
+    
+    font-size: 132px;
+    font-weight: 1000;
+    color: #dddddd;
+    margin-bottom: 1.5rem;
+    font-family:sans-serif;
+    
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.8;
+   
+  }
+  
+  /* Botones */
+  .botones {
+    display: flex;
+  justify-content: center; 
+  gap: 60px;
+   margin-top: -10px;
+   margin-bottom: 20px;
+  }
+  
+  .boton {
+    
+    display: inline-block;
+    width: 140px;
+    padding: 1rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-image:linear-gradient(to bottom, #b1b9eb,#808cd3, #3c53d8);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); 
+    transition:0.3s ease, transform 0.3s ease;
+      transition: all 0.2s ease-in-out; 
+    
+  }
+
+  
+  .boton:hover {
+    background: #7d92ec;
+    transform: translateY(-3px);
+  }
+  
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 10rem;
+    }
+  
+    h2 {
+      font-size: 10rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .boton {
+      width: 90%;
+    }
+  }
+
+.slogan{
+  font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.info-jugadores {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.en-linea, .jugando {
+     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    
+}
+
+.en-linea {
+    color: #007cf0; 
+    justify-content: center;
+
+}
+
+
+.jugando {
+    color: #19c722; 
+    justify-content: center;
+}
+
+.footer-bottom {
+   align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 40%; 
+    font-size: 2em;
+}
+
+.footer-bottom p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:  2vh;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-left: 36px;
+  justify-content: space-between;
+  
+}
+
+.iconos {
+    display: flex;
+    gap: 5px; 
+     align-items: center;
+}
+
+.iconos img {
+  margin-right: 18px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+
+
+
+.seccion-info{
+  
+  display: flex;
+   justify-content: center;
+  flex-direction: column;
+   padding: 0 10%;
+    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,#18287a ,#18287a, #0e1853);
+    box-shadow: 0 4px 8px rgba(248, 240, 240, 0.2);
+  
+} 
+
+.seccion-info h2 {
+     color: white;
+    font-size: 4.5em;
+    margin-top: 0; 
+    text-align: center;
+    
+    
+}
+
+.seccion-info p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+     justify-content: center;
+    text-align: center;
+   
+  
+
+}
+
+
+.seccion2{
+  text-align: center;
+  display: flex;
+   justify-content: center;
+  flex-direction: column;
+   padding: 0 10%;
+    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,#18287a ,#18287a, #0e1853);
+    box-shadow: 0 4px 8px rgba(248, 240, 240, 0.651);
+
+} 
+.seccion2 h2 {
+     color: white;
+    font-size: 3.5em;
+    margin-top: 0; 
+    text-align: center;
+    
+    
+}
+
+.seccion2 p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+     justify-content: center;
+    text-align: center;
+}
+
+.seccion3{
+  text-align: center;
+  display: flex;
+   justify-content: center;
+  flex-direction: column;
+   padding: 0 10%;
+    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,#18287a ,#18287a, #0e1853);
+    box-shadow: 0 4px 8px rgba(248, 240, 240, 0.651);
+
+} 
+.seccion3 h2 {
+     color: white;
+    font-size: 3.5em;
+    margin-top: 0; 
+    text-align: center;
+    
+    
+}
+
+.seccion3 p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+     justify-content: center;
+    text-align: center;
+}
+
+footer{ 
+  background-image:linear-gradient(to bottom, #0d1538,#0a0e25, #0a0e25);
+  height: 20vh;
+}
+
+footer p{
+  color: #a2a9d1;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: center;
+ 
+}

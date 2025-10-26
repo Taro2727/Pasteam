@@ -1,0 +1,133 @@
+body {
+            margin: 0;
+            background: linear-gradient(to bottom, #0b1622, #0f2940);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        header {
+            background-color: #1b2838;
+            padding: 15px;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+
+        header h1 {
+            font-size: 22px;
+            color: #66c0f4;
+            margin: 0;
+        }
+
+        .pagina-juego {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            margin: 50px auto;
+            width: 90%;
+            max-width: 1300px;
+            background: linear-gradient(to right, #0f1c2e, #1b3b7a);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        }
+
+        .video-juego {
+            flex: 2;
+        }
+
+        .video-juego video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .miniaturas {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .miniaturas img {
+            width: 100px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .miniaturas img:hover {
+            transform: scale(1.05);
+        }
+
+        .panel-info {
+            flex: 1;
+        }
+
+        .panel-info img.portada {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .panel-info h2 {
+            margin: 10px 0;
+            font-size: 26px;
+            color: #66c0f4;
+        }
+
+        .descripcion {
+            font-size: 15px;
+            color: #cdd3e1;
+            margin-bottom: 15px;
+        }
+
+        .etiquetas {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .etiquetas span {
+            background-color: #2d4a7a;
+            color: #b7d3ff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            margin-right: 6px;
+        }
+
+        .precio-compra {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .oferta {
+            background-color: #2ecc71;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .precio {
+            color: #aee1ff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .boton-compra {
+            background-color: #3b82f6;
+            border: none;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .boton-compra:hover {
+            background-color: #2563eb;
+        }
