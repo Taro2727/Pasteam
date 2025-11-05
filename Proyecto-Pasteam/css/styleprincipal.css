@@ -1,18 +1,20 @@
-body {
-    font-family: Arial, sans-serif; /* Cambiado a Arial para un look más Steam */
-    margin: 0;
-    padding: 0;
-    /* Fondo principal: gradiente de azul marino a un azul más oscuro */
-    background: linear-gradient(to bottom, #0e1853, #080f33, #0e1853);
-    background-size: cover;
-    line-height: 1.6;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    color: #c6d4df; /* Color de texto por defecto para todo el body */
-}
 
-/* Header */
-header {
+body {
+    font-family: sans-serif; /*esta fuente me gusto por eso la deje */
+    margin: 0;   
+    padding: 0;
+    background-image:linear-gradient(to bottom, #0e1853,#18287a, #182c9c);
+    background-size: cover;
+    line-height: 1.6;  /*espaciado entre textos */
+    scroll-behavior: smooth; /*mueve ligeramente los botones para cuando los toques */
+    overflow: scroll;
+    
+  }
+  
+
+
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,323 +22,452 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    /* Header con gradiente de azul marino oscuro */
-    background: linear-gradient(to bottom, #0a1140, #132475);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
-}
-
-.logo img {
+    background-image:linear-gradient(to bottom, #b1b9eb,#808cd3, #3c53d8);
+    
+  }
+  
+  .logo img {
     height: 45px;
-    border-radius: 50px; /* Asegura que el logo sea circular */
-}
-
-.contacto { /* "Tienda" link */
-    color: #c6d4df; 
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-left: 20px;
-    padding: 5px 10px;
-    transition: color 0.3s;
-}
-
-.contacto a {
-    color: #c6d4df;
-    text-decoration: none;
-}
-
-.contacto a:hover {
-    color: #1e90ff; /* Azul eléctrico en hover */
-}
-
-/* Contenido Principal (que imita la landing de Steam) */
-.contenido-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh; /* Ajustado para que no ocupe 100% de la altura */
-    padding: 60px 20px;
-    position: relative;
-    z-index: 1;
-    /* Fondo con el patrón de puntos de Steam (ejemplo simplificado) */
-    background-image: radial-gradient(circle, #1e90ff33 1px, transparent 1px);
-    background-size: 40px 40px;
-    background-position: top right;
-}
-
-/* Contenedor principal de la información, similar al de Steam */
-.main-container {
-    display: flex;
-    justify-content: space-between; /* Para que el texto y la imagen estén separados */
-    align-items: center; /* Alineación vertical de los elementos */
-    width: 90%;
-    max-width: 1200px; /* Ancho máximo similar al de Steam */
-    background-color: transparent; /* El fondo está en el body */
-    padding: 0; /* Sin padding en este div, el padding lo maneja el interior */
-    border-radius: 0;
-    box-shadow: none;
-}
-
-/* Sección izquierda (texto, slogan, contadores, botón) */
-.left-content {
-    flex: 1; /* Ocupa el espacio disponible a la izquierda */
-    max-width: 500px; /* Ancho máximo para el contenido de la izquierda */
-    text-align: left; /* Alineación del texto a la izquierda */
-    padding-right: 40px; /* Espacio entre el texto y la imagen/video */
-}
-
-.logo-passteam {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Espacio entre el logo+titulo y el slogan */
-}
-
-.logo-passteam img {
-    height: 60px; /* Tamaño del logo circular */
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-    border: 2px solid #1e90ff; /* Borde azul eléctrico para resaltar */
-}
-
-.left-content h2 {
-    color: #ffffff;
-    font-size: 2.8rem; /* Tamaño de fuente para "PASTEAM" */
-    font-weight: bold;
-    margin: 0; /* Elimina márgenes extra */
-    line-height: 1;
-    display: inline-block; /* Para que quede junto al logo */
-}
-
-.slogan {
-    font-family: Arial, sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.4;
-    margin-top: 20px; /* Ajuste de margen superior */
-    margin-bottom: 30px;
-    color: #c6d4df; 
-    max-width: 450px;
-}
-
-.info-jugadores {
-    display: flex;
-    justify-content: flex-start; /* Alinea los contadores a la izquierda */
-    gap: 40px;
-    margin-bottom: 30px;
-}
-
-.info-jugadores h3 {
-    font-size: 1.1rem;
-    font-weight: normal;
-    text-align: left;
-    line-height: 1.2;
-    margin: 0;
-}
-
-/* Usamos tus azules originales */
-.en-linea {
-    color: #1e90ff; /* Azul eléctrico */
-    font-weight: bold;
-}
-
-.jugando {
-    color: #00bfff; /* Otro tono de azul eléctrico */
-    font-weight: bold;
-}
-
-/* Botón principal "Instalar PASTEAM" */
-.boton-principal {
-    display: inline-flex; /* Para que el texto y el icono estén en línea */
-    align-items: center;
-    justify-content: center;
-    width: 200px; 
-    padding: 0.8rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 3px;
-    text-decoration: none;
-    color: white;
-    border: none;
-    /* Gradiente de azul eléctrico para el botón */
-    background: linear-gradient(to bottom, #1e90ff, #007bff); 
-    box-shadow: 0 2px 0 rgba(0,0,0,0.2);
-    transition: background 0.2s ease, transform 0.2s ease;
-    margin-bottom: 20px;
-}
-
-.boton-principal svg { /* Icono de Windows si lo incluyes */
-    margin-left: 10px;
-    fill: white;
-    height: 20px;
-}
-
-.boton-principal:hover {
-    background: linear-gradient(to bottom, #4dafff, #1e90ff);
-    transform: translateY(-1px);
-}
-
-/* Texto y logos "También disponible en" */
-.plataformas-disponibles {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px; /* Ajuste de margen superior */
-}
-
-.plataformas-disponibles p {
-    font-size: 0.9rem;
-    color: #8fa0c4; /* Color de texto más claro */
-    margin: 0;
-}
-
-.plataformas-disponibles .iconos img {
-    height: 20px; /* Iconos más pequeños */
-    filter: brightness(0) invert(1); /* Iconos blancos */
-    opacity: 0.6;
-    transition: opacity 0.3s;
-}
-
-.plataformas-disponibles .iconos img:hover {
-    opacity: 1;
-}
-
-/* Sección derecha (para la imagen/video) */
-.right-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-}
-
-.video-placeholder {
-    width: 100%;
-    max-width: 600px; /* Ancho máximo para la imagen/video */
-    aspect-ratio: 16 / 9; /* Relación de aspecto común para videos */
-    background-color: #1a283c; /* Fondo oscuro para el placeholder */
-    border-radius: 5px;
-    border: 1px solid #1e90ff66; /* Borde sutil azul eléctrico */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #8fa0c4;
-    font-size: 1.2rem;
-}
-
-/* Otros secciones (Qué es PASTEAM, Unete, etc.) */
-.seccion-info,
-.seccion2,
-.seccion3 {
+    border-radius: 50px;
+    filter: brightness(0) invert(1);  /* invierte los colores de la imagen. (ejemplo: blanco y negro) */
+  }
+  
+  
+  
+  .contenido-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     text-align: center;
-    padding: 60px 10%;
-    min-height: 40vh; /* Altura más compacta para las secciones */
-    gap: 30px;
-    font-family: Arial, sans-serif;
-    /* Fondo con gradiente de azul marino */
-    background: linear-gradient(to bottom, #101a5e, #0e1853); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1px;
-}
-
-.seccion-info h2,
-.seccion2 h2,
-.seccion3 h2 {
-    color: #1e90ff; /* Títulos en azul eléctrico */
-    font-size: 2.5rem;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.seccion-info p,
-.seccion2 p,
-.seccion3 p {
-    color: #c6d4df; 
+    padding: 0 1rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  h2 {
+    
+    font-size: 132px;
+    font-weight: 1000;
+    color: #dddddd;
+    margin-bottom: 1.5rem;
+    font-family:sans-serif;
+    
+  }
+  
+  p {
     font-size: 1.1rem;
+    color: #e0e0e0;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
     line-height: 1.8;
-    max-width: 800px;
+   
+  }
+  
+  .botones {
+   
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+
+}
+  .boton {
+    
+    display: inline-block;
+    width: 140px;
+    padding: 1rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 13px;
+    text-decoration: none;
+    color: white;
+    background-image:linear-gradient(to bottom, #b1b9eb,#808cd3, #3c53d8);
+    transition:0.3s ease, transform 0.3s ease;
+      
+   
+    
+  }
+
+  
+  .boton:hover {
+    background: #7d92ec;
+    transform: translateY(-5px);
+  }
+  
+  
+  
+
+.slogan{
+  font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.info-jugadores {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
-/* Footer */
-footer {
-    background: #0a0e25; /* Azul marino más oscuro para el footer */
-    padding: 25px 20px;
+.en-linea, .jugando {
+     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    
+}
+
+.en-linea {
+    color: #007cf0; 
+    justify-content: center;
+
+}
+
+
+.jugando {
+    color: #19c722; 
+    justify-content: center;
+}
+
+.footer-bottom {
+   align-items: center;
+    display: flex;
+   padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:  2vh;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-left: 36px;
+  justify-content: space-between;
+  
+}
+
+.iconos {
+    display: flex;
+    gap: 5px; 
+     align-items: center;
+}
+
+.iconos img {
+  margin-right: 18px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+
+
+
+.seccion-info {
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10%;
+    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,#18287a ,#18287a, #0e1853);
+    box-shadow: 0 4px 8px rgba(248, 240, 240, 0.2);
+    position: relative; 
+ 
+     
+    align-items: center; 
     text-align: center;
-    border-top: 1px solid #0e1853;
 }
 
-footer p {
-    color: #8fa0c4; 
-    font-size: 0.9rem;
-    margin: 0;
+.seccion-info h2 {
+    
+    z-index: 10; 
+    font-size: 3.5rem;
+}
+.seccion-info p {
+   
+    z-index: 10; 
+    max-width: 800px;
+
 }
 
-/* Media Queries */
-@media (max-width: 992px) {
-    .main-container {
-        flex-direction: column; /* Apila el contenido y la imagen en pantallas medianas */
-        text-align: center;
-    }
-    .left-content {
-        padding-right: 0;
-        margin-bottom: 40px;
-        max-width: none;
-    }
-    .left-content h2 {
-        font-size: 2.2rem;
-    }
-    .logo-passteam {
-        justify-content: center; /* Centra el logo y título */
-    }
-    .info-jugadores {
-        justify-content: center; /* Centra los contadores */
-    }
-    .plataformas-disponibles {
-        justify-content: center; /* Centra los iconos de plataforma */
-    }
-    .right-content {
-        padding-left: 0;
-    }
-    .seccion-info h2,
-    .seccion2 h2,
-    .seccion3 h2 {
-        font-size: 2rem;
-    }
+
+.seccion2{
+  text-align: center;
+  display: flex;
+   justify-content: center;
+  flex-direction: column;
+   padding: 0 10%;
+    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,#18287a ,#18287a, #0e1853);
+    box-shadow: 0 4px 8px rgba(248, 240, 240, 0.651);
+
+} 
+
+.comunidad-icono{
+ gap: 20px;
+ justify-content: center;
+ 
+ filter: brightness(0) invert(1);
+}
+.comunidad-icono img{
+  height: 39vh;
 }
 
-@media (max-width: 576px) {
-    header {
-        padding: 1rem;
-    }
-    .logo-passteam img {
-        height: 50px;
-        width: 50px;
-    }
-    .left-content h2 {
-        font-size: 1.8rem;
-    }
-    .slogan {
-        font-size: 1rem;
-    }
-    .info-jugadores h3 {
-        font-size: 1rem;
-    }
-    .boton-principal {
-        width: 100%;
-        font-size: 1rem;
-    }
-    .seccion-info h2,
-    .seccion2 h2,
-    .seccion3 h2 {
-        font-size: 1.8rem;
-    }
-    .seccion-info p,
-    .seccion2 p,
-    .seccion3 p {
-        font-size: 0.95rem;
-    }
+.seccion2 h2 {
+     color: white;
+    font-size: 3.5em;
+    margin-top: 0; 
+    text-align: center;
+    
+    
 }
+
+.seccion2 p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+     justify-content: center;
+    text-align: center;
+}
+
+.seccion3 {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 0 10%;
+    gap: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image:linear-gradient(to bottom,#18287a ,#18287a, #0e1853);
+    box-shadow: 0 4px 8px rgba(248, 240, 240, 0.651);
+    align-items: center; 
+}
+.seccion3 h2 {
+     color: white;
+    font-size: 3.5em;
+    margin-top: 0; 
+    text-align: center;
+    
+    
+}
+
+.seccion3 p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+     justify-content: center;
+    text-align: center;
+}
+.disponible-en{
+    color: white;
+    font-size: 1.1rem; 
+    margin-right: 10px; 
+    
+}
+.boton-instalar {
+    
+   
+    width: 20vh;
+    padding: 1rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-family:sans-serif;
+    background-image:linear-gradient(to bottom, #455cf1,#304ffa, #0063f8);
+    
+    transition:0.3s ease, transform 0.3s ease;
+      transition: all 0.2s ease-in-out; 
+   
+    
+  }
+
+  
+  .boton-instalar:hover {
+    background: #1f7ffd;
+    transform: translateY(-6px);   /* Efecto de elevacion al pasar el cursor */
+
+   
+  }
+
+.juegos-imagenes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    
+   
+}
+
+
+.juego {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    border-radius: 4px;
+    opacity: 0.39; 
+    transition: transform 0.3s, opacity 0.1s;  /*Transicion suave al pasar el cursor*/
+    
+}
+
+.juego:hover {
+    opacity: 1;
+    transform: scale(1.05);      /* Efecto de zoom cuando pasas el cursor encima */
+    z-index: 10; 
+}
+
+.j1 { 
+    top: 15%; 
+    left: 5%; 
+    width: 150px; 
+}
+.j2 { 
+    top: 35%; 
+    left: 18%;  
+    width: 180px; 
+}
+
+.j3 { 
+    top: 55%; 
+    left: 8%; 
+    width: 180px; 
+}
+
+
+.j4 { 
+    top: 10%; 
+    right: 10%; 
+    width: 160px; 
+}
+
+.j5 { 
+    top: 37%; 
+    right: 19%; 
+    width: 150px; 
+}
+
+.j6 { 
+    top: 60%; 
+    right: 7%; 
+    width: 180px; 
+}
+
+.boton-tienda {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(142, 200, 247);
+    transition: transform 0.3s, opacity 0.1s;
+    border-radius: 4px;
+    z-index: 99;  /* Q elemento se debe colocar encima de otros elementos que se superponen en el eje Z */
+    
+}
+
+.boton-tienda:hover {
+   opacity: 1;
+    transform: scale(1.20);   /* Efecto de zoom cuando pasas el cursor encima */
+   
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------FOOTER-----------------*/
+.pasteam-footer {
+    background-color: #06153b;
+    color: #c7d5e0; 
+    padding: 30px 10%; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+   
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-info {
+    max-width: 60%; 
+}
+
+.footer-logo {
+    height: 40px;
+    filter: brightness(0) invert(1); 
+    
+}
+
+.footer-info p {
+    color: #80a4f1; 
+    font-size: 12px;
+    margin: 10px 0;
+    line-height: 1.5;
+    max-width: none; 
+    text-align: left; 
+}
+
+.footer-links-principal a {
+    color: #c7d5e0;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+
+
+.footer-links-principal a:hover {
+    color: #a4c9ff; /* Hover azul claro */
+}
+
+
+.footer-hr {
+    border: none;
+    border-top: 1px solid #5d6474; 
+  
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-nav a {
+    color: #c7d5e0;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+     color: #2a66be;
+}
+
+
+
+
+

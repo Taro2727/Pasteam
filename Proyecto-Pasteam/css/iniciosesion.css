@@ -26,6 +26,8 @@ body {
 }
 .logoheader a{
     color: white;
+    text-decoration: none;
+    margin-top: 15px;
 }
 .card {
     background-image: linear-gradient(to bottom, #e0eaf5, #8190d4);
