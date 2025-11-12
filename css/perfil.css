@@ -1,5 +1,5 @@
 /* =========================================================
-   ESTILOS DEL HEADER DOBLE (El de Pasteam.html)
+   ESTILOS DEL HEADER DOBLE 
    ========================================================= */
 
 /* Contenedor principal del header doble */
@@ -7,12 +7,11 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    /* Eliminado el box-shadow para que no haya línea de separación inferior */
     background-color: transparent;
 }
 
 /* ----------------------------------
-   PARTE SUPERIOR: Botón Instalar y Enlace Tienda (MÁS CHICO Y MISMO COLOR)
+   PARTE SUPERIOR: Botón Instalar y Enlace Tienda 
    ---------------------------------- */
 .header-superior {
     /* Gradiente Azúl Oscuro/Gris (el color de PASTEAM.html) */
@@ -34,7 +33,7 @@
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
-    padding: 0.3rem 1rem; /* Padding ajustado para que Tienda se vea más chico también */
+    padding: 0.3rem 1rem;
     border-radius: 4px;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -67,17 +66,15 @@
 }
 
 /* ----------------------------------
-   PARTE INFERIOR: Logo y Navegación Principal (MISMO COLOR, SIN SOMBRA)
+   PARTE INFERIOR Logo y Navegación Principal 
    ---------------------------------- */
 .header-inferior {
-    /* MISMO COLOR de PASTEAM.html */
     background: linear-gradient(to right, #0F1D38, #183C66, #2A5699);
     padding: 0 10%; 
     height: 65px; 
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    /* Eliminado el box-shadow: inset para quitar la línea divisoria */
 }
 
 .header-inferior-contenido {
@@ -158,8 +155,7 @@
 .link:hover {
     color: white; 
 }
-
-/*----------FIN DEL HEADER-------*/
+/*-----------fin del header----------*/
 
 html, body {
     height: 100%;
