@@ -4,29 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STEAM</title>
+  <title>PASTEAM</title>
   <link rel="stylesheet" href="css/styleprincipal.css">
+  <link rel="icon" href="img/logooficial.png" type="image/png">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="header-container">
-      <div class="logo-titulo">
-        <img src="img/logooficial.png" alt="Logo Pasteam">
-        <h1 class="titulo-header">PASTEAM</h1>
+  <header class="header-doble">
+      <div class="header-superior">
+          <div class="header-superior-contenido">
+              <a href="home.html" class="nav-link-sup">Tienda</a>
+              <a href="descarga.html" class="boton-instalar-header">Instalar Pasteam</a>
+          </div>
       </div>
 
-      <nav class="nav-header">
-        <a href="home.html" class="nav-link">Tienda</a>
-        <a href="descarga.html" class="boton-instalar-header">Instalar Pasteam</a>
-      </nav>
-    </div>
+      <div class="header-inferior">
+          <div class="header-inferior-contenido">
+              <a href="Pasteam.html" class="logo-titulo">
+                  <img src="img/logooficial.png" alt="Logo Pasteam">
+                  <h1 class="titulo-header">PASTEAM</h1>
+              </a>
+          
+              <nav class="nav-principal">
+                  <a href="home.html" class="link">TIENDA</a>
+                  <a href="biblioteca.html" class="link">BIBLIOTECA</a>
+                  <a href="#" class="link">COMUNIDAD</a>
+              </nav>
+          </div>
+      
+          <div class="parte-perfil">
+              <a href="perfil.html" class="link">Perfil</a>
+          </div>
+      </div>
   </header>
-
-
-  <!-- ===== MAIN ===== -->
-  <main class="contenido-principal">
+  <main class="contenido-principal" id="main-content">
 
     <h2>PASTEAM</h2>
     <p class="slogan">
@@ -54,7 +66,6 @@
     </div>
   </main>
 
-  <!-- ===== SECCIÓN JUEGOS ===== -->
   <div class="seccion-info">
     <div class="juegos-imagenes">
       <a href="Minecraft-tienda.html"><img src="img/mine.png" alt="Juego 1" class="juego j1"></a>
@@ -74,7 +85,6 @@
     <a href="home.html" class="boton-tienda">Explorar nuestra tienda →</a>
   </div>
 
-  <!-- ===== SECCIÓN COMUNIDAD ===== -->
   <div class="seccion2">
     <h2>¡Unite a la comunidad!</h2>
     <div class="comunidad-icono">
@@ -86,7 +96,6 @@
     </p>
   </div>
 
-  <!-- ===== SECCIÓN EXTRA ===== -->
   <div class="seccion3">
     <h2>Y mucho más...</h2>
     <p>
@@ -106,7 +115,6 @@
     </div>
   </div>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="pasteam-footer">
     <div class="footer-content">
       <div class="footer-info">
@@ -140,5 +148,5 @@
   </footer>
 
 </body>
-</html>
 
+</html>

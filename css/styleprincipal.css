@@ -7,45 +7,111 @@ body {
   padding: 0;
   background-image: linear-gradient(to bottom, #0e1853, #18287a, #182c9c);
   background-size: cover;
-  line-height: 1.7; /* Mejor legibilidad */
+  line-height: 1.7;
   scroll-behavior: smooth;
-  overflow-y: scroll; /* Asegura scroll vertical */
+  overflow-y: scroll;
   min-height: 100vh;
 }
 
 /* =========================================================
-   HEADER NUEVO ESTILO - TONOS STEAM
+   ESTILOS DEL HEADER DOBLE (COPIADOS DE home.css)
    ========================================================= */
-/* ===========
-   HEADER 
-   =========== */
-.header {
-  background: linear-gradient(to right, #0b1629, #0e234d, #0f3fa8);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 0.8rem 2rem;
-  border-bottom: 2px solid rgba(53, 109, 255, 0.4);
-  margin-bottom: 0; /* Se ajusta para que la primera sección se pegue */
+
+/* Contenedor principal del header doble */
+.header-doble {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Eliminado el box-shadow para que no haya línea de separación inferior */
+    background-color: transparent;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* ----------------------------------
+   PARTE SUPERIOR: Botón Instalar y Enlace Tienda (MÁS CHICO Y MISMO COLOR)
+   ---------------------------------- */
+.header-superior {
+    /* Gradiente Azúl Oscuro/Gris (el color de PASTEAM.html) */
+    background: linear-gradient(to right, #0F1D38, #183C66, #2A5699); 
+    /* Reducido para hacerlo más compacto */
+    padding: 0.3rem 10%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.header-superior-contenido {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-link-sup {
+    color: #d1e4ff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.3rem 1rem; /* Padding ajustado para que Tienda se vea más chico también */
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link-sup:hover {
+    background-color: rgba(47, 88, 201, 0.35);
+    color: #ffffff;
+}
+
+/* BOTÓN VERDE "Instalar Pasteam" */
+.boton-instalar-header {
+  display: inline-block;
+  /* Padding ajustado para que el botón se vea más chico */
+  padding: 0.3rem 0.8rem; 
+  font-size: 0.9rem; /* Fuente un poco más chica */
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  /* Gradiente Verde */
+  background-image: linear-gradient(to bottom, #98C43E, #8BC13F, #7EB83D);
+  border: 1px solid #71a030;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.boton-instalar-header:hover {
+  background-image: linear-gradient(to bottom, #A9D54F, #9ACF4F, #8BB93E);
+  transform: translateY(-1px);
+}
+
+/* ----------------------------------
+   PARTE INFERIOR: Logo y Navegación Principal (MISMO COLOR, SIN SOMBRA)
+   ---------------------------------- */
+.header-inferior {
+    /* MISMO COLOR de PASTEAM.html */
+    background: linear-gradient(to right, #0F1D38, #183C66, #2A5699);
+    padding: 0 10%; 
+    height: 65px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    /* Eliminado el box-shadow: inset para quitar la línea divisoria */
+}
+
+.header-inferior-contenido {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
 }
 
 /* Logo + Título */
 .logo-titulo {
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 10px;
     text-decoration: none;
 }
 
 .logo-titulo img {
-  height: 55px;
+  height: 45px; 
   border-radius: 50%;
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
@@ -57,60 +123,60 @@ body {
 
 .titulo-header {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin: 0;
 }
 
-/* Navegación */
-.nav-header {
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
+
+/* NAV PRINCIPAL */
+.nav-principal {
+    display: flex;
+    align-items: center;
+    height: 100%; 
 }
 
-.nav-link {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #d1e4ff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.2s;
+.parte-perfil {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-.nav-link:hover {
-  background-color: rgba(47, 88, 201, 0.35);
-  color: #ffffff;
-  transform: translateY(-2px);
+.flechas {
+    color: #c7d5e0; 
+    text-decoration: none;
+    font-size: 16px; 
+    padding: 0 5px; 
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    transition: color 0.2s;
 }
 
-/* BOTÓN VERDE "Instalar Pasteam" en el Header */
-.boton-instalar-header {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 700;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #ffffff;
-  /* Gradiente Verde */
-  background-image: linear-gradient(to bottom, #98C43E, #8BC13F, #7EB83D);
-  border: 1px solid #71a030;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  transition: all 0.2s ease-in-out;
-  margin-left: 1.5rem; 
+.flechas:hover {
+    color: white; 
 }
 
-.boton-instalar-header:hover {
-  background-image: linear-gradient(to bottom, #A9D54F, #9ACF4F, #8BB93E);
-  transform: translateY(-1px);
+.link {
+    /* Estilos para TIENDA, BIBLIOTECA, COMUNIDAD, PERFIL */
+    color: #c7d5e0; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold; 
+    padding: 0 10px; 
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: white; 
 }
 
 
 /* =========================================================
-   SECCIÓN PRINCIPAL: TÍTULO Y LOGO
+   CONTENIDO PRINCIPAL (PASTEAM.html)
    ========================================================= */
 .contenido-principal {
   display: flex;
@@ -122,23 +188,23 @@ body {
   padding: 0 1rem;
   position: relative;
   z-index: 1;
-  margin-top: -20px; /* Para mantener la estructura de "cuadrados" */
+  margin-top: -20px;
 }
 
 /* Estilo para el <h2> de la sección principal (PASTEAM) */
 .contenido-principal h2 { 
-  font-size: 6rem; /* Corregido de 132px a 6rem */
+  font-size: 6rem;
   font-weight: 1000;
   color: #dddddd;
   margin-bottom: 1.5rem;
   font-family: sans-serif;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
-  display: flex; /* Para alinear el logo y el texto */
+  display: flex; 
   align-items: center;
-  gap: 20px;
+  gap: 0px; 
 }
 
-/* Insertar el logo al lado del H2 con ::before */
+/* Insertar el logo al lado del H2 con ::before (mismo tamaño que el texto) */
 .contenido-principal h2::before {
     content: "";
     background-image: url('img/logooficial.png'); 
@@ -147,10 +213,11 @@ body {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); 
+    margin-right: 15px; 
 }
 
-/* Ocultar h1 genérico si aparece */
+/* Ocultar h1 genérico (se asume que el h1 del header es el único visible) */
 h1 {
   display: none;
 }
@@ -168,12 +235,12 @@ p {
   color: #e0e0e0;
   max-width: 700px;
   margin: 0 auto 2.5rem auto;
-  line-height: 1.8;
+  line-height: 1.8; 
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* =========================================================
-   BOTONES PRINCIPALES (Crear cuenta / Iniciar sesión) - AJUSTE DE BRILLO
+   BOTONES PRINCIPALES - AJUSTE DE BRILLO (Subtíl)
    ========================================================= */
 .botones {
   display: flex;
@@ -200,6 +267,7 @@ p {
 }
 
 .boton:hover {
+  /* Efecto hover más sutil */
   background-image: linear-gradient(to bottom, #5069fe, #3a58fa, #0045ff);
   transform: translateY(-3px) scale(1.02); 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
@@ -257,7 +325,6 @@ p {
 
 /* Estilos para el bloque de iconos dentro del footer */
 .pasteam-footer .footer-bottom {
-    /* Mantenemos el estilo para el footer si el usuario lo hubiera movido allí */
     display: flex;
     align-items: center;
     padding: 20px 0;
@@ -300,7 +367,7 @@ p {
   position: relative;
   align-items: center;
   text-align: center;
-  margin-top: 20px; /* Para mantener la estructura de "cuadrados" */
+  margin-top: 20px;
 }
 
 .seccion-info h2 {
@@ -379,7 +446,7 @@ p {
   height: 100vh;
   background-image: linear-gradient(to bottom, #18287a, #18287a, #0e1853);
   box-shadow: 0 4px 8px rgba(248, 240, 240, 0.65);
-  margin-top: 20px; /* Para mantener la estructura de "cuadrados" */
+  margin-top: 20px;
 }
 
 .comunidad-icono {
@@ -423,7 +490,7 @@ p {
   background-image: linear-gradient(to bottom, #18287a, #18287a, #0e1853);
   box-shadow: 0 4px 8px rgba(248, 240, 240, 0.65);
   align-items: center;
-  margin-top: 20px; /* Para mantener la estructura de "cuadrados" */
+  margin-top: 20px;
 }
 
 .seccion3 h2 {
@@ -458,6 +525,7 @@ p {
   font-family: sans-serif;
   background-image: linear-gradient(to bottom, #455cf1, #304ffa, #0063f8);
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
 .boton-instalar:hover {
@@ -474,7 +542,7 @@ p {
   padding: 30px 10%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 13px;
-  margin-top: 20px; /* Para mantener la estructura de "cuadrados" */
+  margin-top: 20px;
 }
 
 .footer-content {

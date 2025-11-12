@@ -1,31 +1,133 @@
-/*HEADER COMPLETO*/
-header {
-    
-   background-image:linear-gradient(to bottom, #b1b9eb,#808cd3, #3c53d8);
-    padding: 0 10%; 
-    height: 55px;
-    display: flex;
-    align-items: center;
+/* =========================================================
+   ESTILOS DEL HEADER DOBLE (El de Pasteam.html)
+   ========================================================= */
+
+/* Contenedor principal del header doble */
+.header-doble {
+    position: sticky;
     top: 0;
+    z-index: 100;
+    /* Eliminado el box-shadow para que no haya línea de separación inferior */
+    background-color: transparent;
 }
 
+/* ----------------------------------
+   PARTE SUPERIOR: Botón Instalar y Enlace Tienda (MÁS CHICO Y MISMO COLOR)
+   ---------------------------------- */
+.header-superior {
+    /* Gradiente Azúl Oscuro/Gris (el color de PASTEAM.html) */
+    background: linear-gradient(to right, #0F1D38, #183C66, #2A5699); 
+    /* Reducido para hacerlo más compacto */
+    padding: 0.3rem 10%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.header-superior-contenido {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-link-sup {
+    color: #d1e4ff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.3rem 1rem; /* Padding ajustado para que Tienda se vea más chico también */
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link-sup:hover {
+    background-color: rgba(47, 88, 201, 0.35);
+    color: #ffffff;
+}
+
+/* BOTÓN VERDE "Instalar Pasteam" */
+.boton-instalar-header {
+  display: inline-block;
+  /* Padding ajustado para que el botón se vea más chico */
+  padding: 0.3rem 0.8rem; 
+  font-size: 0.9rem; /* Fuente un poco más chica */
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  /* Gradiente Verde */
+  background-image: linear-gradient(to bottom, #98C43E, #8BC13F, #7EB83D);
+  border: 1px solid #71a030;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.boton-instalar-header:hover {
+  background-image: linear-gradient(to bottom, #A9D54F, #9ACF4F, #8BB93E);
+  transform: translateY(-1px);
+}
+
+/* ----------------------------------
+   PARTE INFERIOR: Logo y Navegación Principal (MISMO COLOR, SIN SOMBRA)
+   ---------------------------------- */
+.header-inferior {
+    /* MISMO COLOR de PASTEAM.html */
+    background: linear-gradient(to right, #0F1D38, #183C66, #2A5699);
+    padding: 0 10%; 
+    height: 65px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    /* Eliminado el box-shadow: inset para quitar la línea divisoria */
+}
+
+.header-inferior-contenido {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+/* Logo + Título */
+.logo-titulo {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-titulo img {
+  height: 45px; 
+  border-radius: 50%;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.logo-titulo img:hover {
+  transform: scale(1.08);
+}
+
+.titulo-header {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* NAV PRINCIPAL */
 .nav-principal {
-    
     display: flex;
     align-items: center;
     height: 100%; 
 }
 
 .parte-perfil {
-   
-    margin-left: auto; 
     display: flex;
     align-items: center;
     height: 100%;
 }
 
 .flechas {
-    
     color: #c7d5e0; 
     text-decoration: none;
     font-size: 16px; 
@@ -41,13 +143,13 @@ header {
 }
 
 .link {
+    /* Estilos para TIENDA, BIBLIOTECA, COMUNIDAD, PERFIL */
     color: #c7d5e0; 
     text-decoration: none;
     font-size: 14px;
     font-weight: bold; 
     padding: 0 10px; 
     height: 100%;
-
     display: flex; 
     align-items: center;
     transition: color 0.2s;
@@ -56,7 +158,6 @@ header {
 .link:hover {
     color: white; 
 }
-
 /*final del HEADER*/
 
 
@@ -254,4 +355,3 @@ body {
 .footer-nav a:hover {
     color: #66c0f4;
 }
-
