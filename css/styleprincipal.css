@@ -29,9 +29,7 @@ body {
    PARTE SUPERIOR: Botón Instalar y Enlace Tienda 
    ---------------------------------- */
 .header-superior {
-    /* Gradiente Azúl Oscuro/Gris (el color de PASTEAM.html) */
     background: linear-gradient(to right, #0F1D38, #183C66, #2A5699); 
-    /* Reducido para hacerlo más compacto */
     padding: 0.3rem 10%; 
     display: flex;
     justify-content: flex-end; 
@@ -61,14 +59,12 @@ body {
 /* BOTÓN VERDE "Instalar Pasteam" */
 .boton-instalar-header {
   display: inline-block;
-  /* Padding ajustado para que el botón se vea más chico */
   padding: 0.3rem 0.8rem; 
-  font-size: 0.9rem; /* Fuente un poco más chica */
+  font-size: 0.9rem; 
   font-weight: 700;
   border-radius: 4px;
   text-decoration: none;
   color: #ffffff;
-  /* Gradiente Verde */
   background-image: linear-gradient(to bottom, #98C43E, #8BC13F, #7EB83D);
   border: 1px solid #71a030;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
@@ -125,7 +121,6 @@ body {
     margin: 0;
 }
 
-
 /* NAV PRINCIPAL */
 .nav-principal {
     display: flex;
@@ -139,23 +134,7 @@ body {
     height: 100%;
 }
 
-.flechas {
-    color: #c7d5e0; 
-    text-decoration: none;
-    font-size: 16px; 
-    padding: 0 5px; 
-    height: 100%;
-    display: flex; 
-    align-items: center;
-    transition: color 0.2s;
-}
-
-.flechas:hover {
-    color: white; 
-}
-
 .link {
-    /* Estilos para TIENDA, BIBLIOTECA, COMUNIDAD, PERFIL */
     color: #c7d5e0; 
     text-decoration: none;
     font-size: 14px;
@@ -170,7 +149,6 @@ body {
 .link:hover {
     color: white; 
 }
-/*-----------fin del header----------*/
 
 
 /* =========================================================
