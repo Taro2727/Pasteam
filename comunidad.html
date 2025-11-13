@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft - Tienda Steam</title>
-    <link rel="stylesheet" href="css/minecraft-tienda.css">
+    <title>Comunidad - Pasteam</title>
+    <link rel="stylesheet" href="css/comunidad.css">
     <link rel="icon" href="img/logooficial.png" type="image/png">
 </head>
-
 <body>
-
     <header class="header-doble">
         <div class="header-superior">
             <div class="header-superior-contenido">
@@ -26,10 +23,9 @@
                 </a>
             
                 <nav class="nav-principal">
-
                     <a href="home.html" class="link">TIENDA</a>
                     <a href="biblioteca.html" class="link">BIBLIOTECA</a>
-                    <a href="comunidad.html" class="link">COMUNIDAD</a>
+                    <a href="#" class="link">COMUNIDAD</a>
                 </nav>
             </div>
         
@@ -39,58 +35,41 @@
         </div>
     </header>
 
-    <main class="pagina-juego">
-
-        <section class="video-juego">
-            <video src="videos/minecraft.mp4" controls poster="img/mine.png"></video>
-
-            <div class="miniaturas">
-                <img src="img/mine1.png" alt="Miniatura 1 de Minecraft">
-                <img src="img/mine2.png" alt="Miniatura 2 de Minecraft">
-                <img src="img/mine3.png" alt="Miniatura 3 de Minecraft">
+    <main class="contenedor-tarjetas">
+        
+        <div class="tarjeta-juego">
+            <div class="tarjeta-contenido">
+                <img src="img/mine.png" alt="Minecraft">
+                <h2 class="tarjeta-titulo">Minecraft</h2>
+                <p class="tarjeta-etiquetas">#Diversion #Crear #creatividad</p>
             </div>
-        </section>
+        </div>
 
-        <aside class="panel-info">
-            <img src="img/mine.png" alt="Portada de Minecraft" class="portada">
-            <h2>Minecraft</h2>
-
-            <p class="descripcion">
-                Minecraft es un juego de exploración y construcción en mundos infinitos.
-                Sobrevive, crea y compartí tus aventuras con amigos.
-            </p>
-
-            <p><strong>Reseñas recientes:</strong> Muy positivas (12.345)</p>
-            <p><strong>Fecha de lanzamiento:</strong> 18 Nov 2011</p>
-            <p><strong>Desarrollador:</strong> Mojang Studios</p>
-            <p><strong>Editor:</strong> Xbox Game Studios</p>
-
-            <div class="etiquetas">
-                <span>Mundo abierto</span>
-                <span>Supervivencia</span>
-                <span>Creativo</span>
+        <div class="tarjeta-juego">
+            <div class="tarjeta-contenido">
+                <img src="img/barbia.jpg" alt="Barbie y las sirenas">
+                <h2 class="tarjeta-titulo">Barbie y las sirenas</h2>
+                <p class="tarjeta-etiquetas">#Mujer #Rosa #Rubia</p>
             </div>
+        </div>
 
-            <div class="precio-compra">
-                <span class="oferta">¡Oferta!</span>
-                <span class="precio">100 Steam Coins</span>
-                <button class="boton-compra">Comprar</button>
+        <div class="tarjeta-juego">
+            <div class="tarjeta-contenido">
+                <img src="img/lol.jpg" alt="League of Legends">
+                <h2 class="tarjeta-titulo">Lol</h2>
+                <p class="tarjeta-etiquetas">#Gordura #Diversion #Olor</p>
             </div>
-        </aside>
-
+        </div>
+        
     </main>
-
     <footer class="pasteam-footer">
-
         <div class="footer-content">
-
             <div class="footer-info">
-                <img src="img/logooficial.png" alt="Logo de Pasteam" class="footer-logo">
-
+                <img src="img/logooficial.png" class="footer-logo" alt="Logo Pasteam">
                 <p>
-                    © 2025 Palve Corporation. Todos los derechos reservados. Todas las marcas registradas
-                    pertenecen a sus respectivos dueños en Argentina y otros países.
-                    Todos los precios incluyen IVA (donde sea aplicable).
+                © 2025 Palve Corporation. Todos los derechos reservados.
+                Todas las marcas registradas pertenecen a sus respectivos dueños en Argentina y otros países.
+                Todos los precios incluyen IVA (donde sea aplicable).
                 </p>
 
                 <div class="footer-links-principal">
@@ -105,16 +84,14 @@
 
         <hr class="footer-hr">
 
-        <nav class="footer-nav">
+        <div class="footer-nav">
             <a href="#">Acerca de Pasteam</a>
             <a href="#">Empleo</a>
             <a href="#">Palveworks</a>
             <a href="#">Distribución de Pasteam</a>
             <a href="#">Soporte</a>
             <a href="#">Tarjetas regalo</a>
-        </nav>
-
+        </div>
     </footer>
-
 </body>
 </html>
